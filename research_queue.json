@@ -157,6 +157,76 @@
       "status": "pending",
       "notes": "Best config from 83 experiments on RTX 3080 Ti. 8.13% improvement over baseline. Key changes: depth 8->6, HEAD_DIM 128->64, MLP 8x, GELU, WEIGHT_DECAY 0, FINAL_LR_FRAC 0.02.",
       "config_ref": "autoresearch-win-rtx/export/best_configs.json"
+    },
+    {
+      "id": "RQ-PEP-001",
+      "domain": "peptide_quality",
+      "tier": 1,
+      "query": "BPC-157 third-party testing data Finnrick Janoshik vendor purity analysis adulterants degradation markers peptide quality 2024-2026",
+      "target": [
+        "reports/peptides"
+      ],
+      "max_papers": 15,
+      "recurrence": "quarterly",
+      "last_run": null,
+      "status": "queued",
+      "notes": "Survey all publicly available testing data for BPC-157. Map vendor quality distribution. Identify common adulterants and degradation markers. Sources: Finnrick, Janoshik, community reports."
+    },
+    {
+      "id": "RQ-PEP-002",
+      "domain": "peptide_regulation",
+      "tier": 1,
+      "query": "FDA enforcement compounded semaglutide tirzepatide GLP-1 agonist purity JMIR study compounding pharmacy consumer risk 2024-2026",
+      "target": [
+        "reports/peptides"
+      ],
+      "max_papers": 15,
+      "recurrence": "quarterly",
+      "last_run": null,
+      "status": "queued",
+      "notes": "Research FDA enforcement actions against compounded semaglutide/tirzepatide. Summarize JMIR purity study findings. Analyze consumer risk factors in the GLP-1 compounding crisis."
+    },
+    {
+      "id": "RQ-PEP-003",
+      "domain": "peptide_testing",
+      "tier": 2,
+      "query": "peptide purity testing methods HPLC mass spectrometry Raman NIR spectroscopy consumer accessible low-cost at-home verification 2024-2026",
+      "target": [
+        "reports/peptides"
+      ],
+      "max_papers": 15,
+      "recurrence": "quarterly",
+      "last_run": null,
+      "status": "queued",
+      "notes": "Compare accessible testing methods (HPLC, MS, Raman, NIR) by cost, accuracy, and consumer accessibility. Identify the most viable path to at-home or low-cost peptide testing."
+    },
+    {
+      "id": "RQ-PEP-004",
+      "domain": "peptide_stability",
+      "tier": 2,
+      "query": "peptide stability degradation pathways BPC-157 semaglutide TB-500 CJC-1295 temperature light sensitivity reconstitution storage 2024-2026",
+      "target": [
+        "reports/peptides"
+      ],
+      "max_papers": 15,
+      "recurrence": "quarterly",
+      "last_run": null,
+      "status": "queued",
+      "notes": "Research degradation pathways for popular peptides (BPC-157, semaglutide, TB-500, CJC-1295). Temperature sensitivity, light sensitivity, reconstitution stability. Inform consumer storage guidance."
+    },
+    {
+      "id": "RQ-PEP-005",
+      "domain": "peptide_regulation",
+      "tier": 1,
+      "query": "FDA WADA peptide regulation 2026 HHS Category 2 reclassification state-level peptide laws consumer legal status research chemicals 2025-2026",
+      "target": [
+        "reports/peptides"
+      ],
+      "max_papers": 15,
+      "recurrence": "quarterly",
+      "last_run": null,
+      "status": "queued",
+      "notes": "Map current FDA, WADA, and state-level peptide regulations. Track HHS Category 2 reclassification discussions. Create a consumer-facing legal status guide for peptides in 2026."
     }
   ]
 }
