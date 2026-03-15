@@ -1,13 +1,17 @@
 {
   "version": "1.0",
-  "updated_at": "2026-03-14",
+  "updated_at": "2026-03-15",
   "queue": [
     {
       "id": "RQ-001",
       "domain": "prompt_engineering",
       "tier": 1,
       "query": "effective LLM tool use patterns for code generation and review 2025-2026",
-      "target": ["skills/mtsmu-review", "skills/simplify", "skills/tdd"],
+      "target": [
+        "skills/mtsmu-review",
+        "skills/simplify",
+        "skills/tdd"
+      ],
       "max_papers": 10,
       "recurrence": "monthly",
       "last_run": null,
@@ -18,7 +22,10 @@
       "domain": "code_review",
       "tier": 1,
       "query": "automated code review effectiveness LLM-based defect detection 2025-2026",
-      "target": ["skills/mtsmu-review", "skills/pr-summary"],
+      "target": [
+        "skills/mtsmu-review",
+        "skills/pr-summary"
+      ],
       "max_papers": 10,
       "recurrence": "monthly",
       "last_run": null,
@@ -29,7 +36,11 @@
       "domain": "incident_response",
       "tier": 1,
       "query": "automated incident triage SRE runbook automation alert correlation 2025-2026",
-      "target": ["skills/incident", "skills/mtsmu-debug", "skills/health"],
+      "target": [
+        "skills/incident",
+        "skills/mtsmu-debug",
+        "skills/health"
+      ],
       "max_papers": 10,
       "recurrence": "monthly",
       "last_run": null,
@@ -40,7 +51,9 @@
       "domain": "model_routing",
       "tier": 2,
       "query": "RouteLLM FrugalGPT cascading inference model selection optimization 2025-2026",
-      "target": ["services/inference_agent"],
+      "target": [
+        "services/inference_agent"
+      ],
       "max_papers": 10,
       "recurrence": "monthly",
       "last_run": null,
@@ -51,7 +64,10 @@
       "domain": "agent_coordination",
       "tier": 2,
       "query": "multi-agent communication protocols stigmergic coordination delegation patterns 2025-2026",
-      "target": ["bus-protocol", "cognition/"],
+      "target": [
+        "bus-protocol",
+        "cognition/"
+      ],
       "max_papers": 10,
       "recurrence": "monthly",
       "last_run": null,
@@ -62,7 +78,10 @@
       "domain": "capability_security",
       "tier": 2,
       "query": "capability-based security object-capability model CHERI principle of least authority agent systems",
-      "target": ["services/delegation_token", "services/governance_bus"],
+      "target": [
+        "services/delegation_token",
+        "services/governance_bus"
+      ],
       "max_papers": 10,
       "recurrence": "monthly",
       "last_run": null,
@@ -73,7 +92,11 @@
       "domain": "test_strategy",
       "tier": 1,
       "query": "mutation testing property-based testing chaos engineering agent systems 2025-2026",
-      "target": ["skills/tdd", "skills/test-run", "skills/coverage"],
+      "target": [
+        "skills/tdd",
+        "skills/test-run",
+        "skills/coverage"
+      ],
       "max_papers": 10,
       "recurrence": "monthly",
       "last_run": null,
@@ -84,7 +107,10 @@
       "domain": "cost_optimization",
       "tier": 2,
       "query": "LLM inference cost optimization token-efficient prompting speculative decoding 2025-2026",
-      "target": ["services/cost_tracker", "services/inference_agent"],
+      "target": [
+        "services/cost_tracker",
+        "services/inference_agent"
+      ],
       "max_papers": 10,
       "recurrence": "monthly",
       "last_run": null,
@@ -95,7 +121,9 @@
       "domain": "agent_frameworks",
       "tier": 3,
       "query": "CrewAI AutoGen LangGraph Devin OpenHands agent framework comparison 2025-2026",
-      "target": ["architecture"],
+      "target": [
+        "architecture"
+      ],
       "max_papers": 10,
       "recurrence": "quarterly",
       "last_run": null,
@@ -106,11 +134,29 @@
       "domain": "governance",
       "tier": 3,
       "query": "AI governance frameworks audit trail design compliance automation agent systems 2025-2026",
-      "target": ["services/governance_bus", "hummbl-gaas-platform"],
+      "target": [
+        "services/governance_bus",
+        "hummbl-gaas-platform"
+      ],
       "max_papers": 10,
       "recurrence": "quarterly",
       "last_run": null,
       "status": "pending"
+    },
+    {
+      "id": "RQ-AR-001",
+      "domain": "autoresearch_training",
+      "tier": 1,
+      "query": "validate autoresearch best config (val_bpb=0.466875) with 30-60min training run",
+      "target": [
+        "autoresearch-win-rtx"
+      ],
+      "max_papers": 0,
+      "recurrence": "once",
+      "last_run": null,
+      "status": "pending",
+      "notes": "Best config from 83 experiments on RTX 3080 Ti. 8.13% improvement over baseline. Key changes: depth 8->6, HEAD_DIM 128->64, MLP 8x, GELU, WEIGHT_DECAY 0, FINAL_LR_FRAC 0.02.",
+      "config_ref": "autoresearch-win-rtx/export/best_configs.json"
     }
   ]
 }
