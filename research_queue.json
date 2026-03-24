@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-03-15",
+  "updated_at": "2026-03-23",
   "queue": [
     {
       "id": "RQ-001",
@@ -14,8 +14,9 @@
       ],
       "max_papers": 10,
       "recurrence": "monthly",
-      "last_run": null,
-      "status": "pending"
+      "last_run": "2026-03-23",
+      "status": "completed",
+      "output": "reports/llm_tool_use_code_patterns_2026.md"
     },
     {
       "id": "RQ-002",
@@ -28,8 +29,9 @@
       ],
       "max_papers": 10,
       "recurrence": "monthly",
-      "last_run": null,
-      "status": "pending"
+      "last_run": "2026-03-23",
+      "status": "completed",
+      "output": "reports/automated_code_review_2026.md"
     },
     {
       "id": "RQ-003",
@@ -43,8 +45,9 @@
       ],
       "max_papers": 10,
       "recurrence": "monthly",
-      "last_run": null,
-      "status": "pending"
+      "last_run": "2026-03-23",
+      "status": "completed",
+      "output": "reports/incident_response_automation_2026.md"
     },
     {
       "id": "RQ-004",
@@ -56,8 +59,9 @@
       ],
       "max_papers": 10,
       "recurrence": "monthly",
-      "last_run": null,
-      "status": "pending"
+      "last_run": "2026-03-23",
+      "status": "completed",
+      "output": "reports/model_routing_cascading_inference_2026.md"
     },
     {
       "id": "RQ-005",
@@ -70,8 +74,9 @@
       ],
       "max_papers": 10,
       "recurrence": "monthly",
-      "last_run": null,
-      "status": "pending"
+      "last_run": "2026-03-23",
+      "status": "completed",
+      "output": "reports/multi_agent_coordination_2026.md"
     },
     {
       "id": "RQ-006",
@@ -84,8 +89,9 @@
       ],
       "max_papers": 10,
       "recurrence": "monthly",
-      "last_run": null,
-      "status": "pending"
+      "last_run": "2026-03-23",
+      "status": "completed",
+      "output": "reports/capability_security_agent_systems_2026.md"
     },
     {
       "id": "RQ-007",
@@ -99,8 +105,9 @@
       ],
       "max_papers": 10,
       "recurrence": "monthly",
-      "last_run": null,
-      "status": "pending"
+      "last_run": "2026-03-23",
+      "status": "completed",
+      "output": "reports/test_strategy_agent_systems_2026.md"
     },
     {
       "id": "RQ-008",
@@ -113,8 +120,9 @@
       ],
       "max_papers": 10,
       "recurrence": "monthly",
-      "last_run": null,
-      "status": "pending"
+      "last_run": "2026-03-23",
+      "status": "completed",
+      "output": "reports/llm_cost_optimization_2026.md"
     },
     {
       "id": "RQ-009",
@@ -126,8 +134,9 @@
       ],
       "max_papers": 10,
       "recurrence": "quarterly",
-      "last_run": null,
-      "status": "pending"
+      "last_run": "2026-03-23",
+      "status": "completed",
+      "output": "reports/agent_frameworks_comparison_2026.md"
     },
     {
       "id": "RQ-010",
@@ -140,8 +149,9 @@
       ],
       "max_papers": 10,
       "recurrence": "quarterly",
-      "last_run": null,
-      "status": "pending"
+      "last_run": "2026-03-23",
+      "status": "completed",
+      "output": "reports/ai_governance_compliance_2026.md"
     },
     {
       "id": "RQ-AR-001",
@@ -168,8 +178,8 @@
       ],
       "max_papers": 15,
       "recurrence": "quarterly",
-      "last_run": null,
-      "status": "queued",
+      "last_run": "2026-03-23",
+      "status": "completed",
       "notes": "Survey all publicly available testing data for BPC-157. Map vendor quality distribution. Identify common adulterants and degradation markers. Sources: Finnrick, Janoshik, community reports."
     },
     {
@@ -182,9 +192,10 @@
       ],
       "max_papers": 15,
       "recurrence": "quarterly",
-      "last_run": null,
-      "status": "queued",
-      "notes": "Research FDA enforcement actions against compounded semaglutide/tirzepatide. Summarize JMIR purity study findings. Analyze consumer risk factors in the GLP-1 compounding crisis."
+      "last_run": "2026-03-23",
+      "status": "completed",
+      "notes": "Research FDA enforcement actions against compounded semaglutide/tirzepatide. Summarize JMIR purity study findings. Analyze consumer risk factors in the GLP-1 compounding crisis.",
+      "output": "reports/peptides/glp1_fda_enforcement_2026.md"
     },
     {
       "id": "RQ-PEP-003",
@@ -196,8 +207,8 @@
       ],
       "max_papers": 15,
       "recurrence": "quarterly",
-      "last_run": null,
-      "status": "queued",
+      "last_run": "2026-03-23",
+      "status": "completed",
       "notes": "Compare accessible testing methods (HPLC, MS, Raman, NIR) by cost, accuracy, and consumer accessibility. Identify the most viable path to at-home or low-cost peptide testing."
     },
     {
@@ -210,8 +221,8 @@
       ],
       "max_papers": 15,
       "recurrence": "quarterly",
-      "last_run": null,
-      "status": "queued",
+      "last_run": "2026-03-23",
+      "status": "completed",
       "notes": "Research degradation pathways for popular peptides (BPC-157, semaglutide, TB-500, CJC-1295). Temperature sensitivity, light sensitivity, reconstitution stability. Inform consumer storage guidance."
     },
     {
@@ -224,9 +235,10 @@
       ],
       "max_papers": 15,
       "recurrence": "quarterly",
-      "last_run": null,
-      "status": "queued",
-      "notes": "Map current FDA, WADA, and state-level peptide regulations. Track HHS Category 2 reclassification discussions. Create a consumer-facing legal status guide for peptides in 2026."
+      "last_run": "2026-03-23",
+      "status": "completed",
+      "notes": "Map current FDA, WADA, and state-level peptide regulations. Track HHS Category 2 reclassification discussions. Create a consumer-facing legal status guide for peptides in 2026.",
+      "output": "reports/peptides/peptide_regulation_landscape_2026.md"
     }
   ]
 }
