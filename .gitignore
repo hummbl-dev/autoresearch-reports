@@ -1,0 +1,35 @@
+# Logs - keep local only, don't bloat repo history
+system_health_log.jsonl
+*.log
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Editor artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Temp files
+*.tmp
+*.bak

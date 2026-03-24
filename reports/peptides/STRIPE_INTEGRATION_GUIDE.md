@@ -287,8 +287,8 @@ export const stripePromise = loadStripe(
 # .env.local (NEVER commit this file)
 
 # Server-side only (no NEXT_PUBLIC_ prefix)
-STRIPE_SECRET_KEY=sk_test_YOUR_TEST_KEY_HERE
-STRIPE_WEBHOOK_SECRET=whsec_xxxxxxxxxxxxxxxxxxxxxxxx
+STRIPE_SECRET_KEY=<your-stripe-secret-key>
+STRIPE_WEBHOOK_SECRET=<your-webhook-signing-secret>
 
 # Client-side safe (NEXT_PUBLIC_ prefix)
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_xxxxxxxxxxxxxxxxxxxxxxxx
@@ -1205,9 +1205,9 @@ peptide-checker/
 
 ```env
 # Stripe (get keys from https://dashboard.stripe.com/apikeys)
-STRIPE_SECRET_KEY=sk_test_your_secret_key_here
-STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret_here
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_your_publishable_key_here
+STRIPE_SECRET_KEY=<your-stripe-secret-key>
+STRIPE_WEBHOOK_SECRET=<your-webhook-signing-secret>
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=<your-stripe-publishable-key>
 
 # Stripe Price IDs (created via Dashboard or scripts/create-stripe-products.ts)
 STRIPE_PRICE_PREMIUM_MONTHLY=price_xxxxxxxxx
