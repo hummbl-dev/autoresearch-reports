@@ -1,0 +1,58 @@
+name: Repository validation
+
+on:
+  pull_request:
+    paths:
+      - "research_queue.json"
+      - "*.ps1"
+      - "*.sh"
+      - ".github/workflows/validate.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "research_queue.json"
+      - "*.ps1"
+      - "*.sh"
+      - ".github/workflows/validate.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate research queue JSON
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+
+          queue_path = Path("research_queue.json")
+          with queue_path.open(encoding="utf-8") as handle:
+              json.load(handle)
+
+      - name: Check shell script syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash -n watchdog.sh
+
+      - name: Check PowerShell script syntax
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          foreach ($script in @("health_check.ps1", "high_cpu_procs.ps1")) {
+            $tokens = $null
+            $errors = $null
+            [System.Management.Automation.Language.Parser]::ParseFile(
+              (Join-Path (Get-Location) $script),
+              [ref]$tokens,
+              [ref]$errors
+            ) | Out-Null
+            if ($errors.Count -gt 0) {
+              $errors | ForEach-Object { Write-Error $_.Message }
+              throw "PowerShell parse failed for $script"
+            }
+          }
