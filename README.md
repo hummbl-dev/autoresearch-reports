@@ -19,6 +19,19 @@ MBP (human review + merge)      →  applied/
 - `applied/` — Archive of accepted changes (moved after merge)
 - `research_queue.json` — Topic queue with recurrence schedules
 
+## Automation Posture
+
+This repository carries generated research artifacts plus a small amount of
+operational configuration. CI should stay narrow and mechanical:
+
+- Parse `research_queue.json`.
+- Syntax-check the root shell helper.
+- Syntax-check the root PowerShell helpers.
+
+The validation workflow intentionally does not judge report quality, synthesis
+quality, or whether generated findings should be adopted. Those remain review
+decisions outside CI.
+
 ## Naming Convention
 
 - Reports: `reports/YYYY-MM-DD-domain-query-slug.md`
