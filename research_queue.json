@@ -1,7 +1,87 @@
 {
   "version": "1.0",
-  "updated_at": "2026-03-23",
+  "updated_at": "2026-05-13",
   "queue": [
+    {
+      "id": "RQ-2026Q2-001",
+      "domain": "ai_governance_regulation",
+      "tier": 1,
+      "query": "Q2 2026 AI governance regulation state law federal agency enterprise compliance update",
+      "target": [
+        "governance",
+        "compliance",
+        "evidence-gate"
+      ],
+      "max_papers": 12,
+      "recurrence": "monthly",
+      "last_run": null,
+      "status": "pending",
+      "notes": "Refresh regulatory landscape for HUMMBL governance and evidence products."
+    },
+    {
+      "id": "RQ-2026Q2-002",
+      "domain": "mcp_security",
+      "tier": 1,
+      "query": "Model Context Protocol security threat model tool permissions prompt injection 2025 2026",
+      "target": [
+        "mcp-server",
+        "agent-tools",
+        "security-scan"
+      ],
+      "max_papers": 12,
+      "recurrence": "monthly",
+      "last_run": null,
+      "status": "pending",
+      "notes": "Prioritize MCP/tool-call attack surface research for agent governance."
+    },
+    {
+      "id": "RQ-2026Q2-003",
+      "domain": "agent_observability",
+      "tier": 2,
+      "query": "agent observability evaluation traces governance receipts autonomous agent monitoring 2025 2026",
+      "target": [
+        "agent-observability",
+        "coordination-bus",
+        "governance-bus"
+      ],
+      "max_papers": 10,
+      "recurrence": "monthly",
+      "last_run": null,
+      "status": "pending",
+      "notes": "Map observability practices into HUMMBL receipts and review loops."
+    },
+    {
+      "id": "RQ-2026Q2-004",
+      "domain": "local_inference_routing",
+      "tier": 2,
+      "query": "local inference routing GPU CPU cost latency model cascade small language models 2025 2026",
+      "target": [
+        "NemoClaw",
+        "autoresearch-win-rtx",
+        "cost-governor"
+      ],
+      "max_papers": 10,
+      "recurrence": "monthly",
+      "last_run": null,
+      "status": "pending",
+      "notes": "Update local/edge inference economics for Anvil and nodezero routing."
+    },
+    {
+      "id": "RQ-2026Q2-005",
+      "domain": "enterprise_ai_procurement",
+      "tier": 3,
+      "query": "enterprise AI procurement risk vendor evaluation model transparency governance 2025 2026",
+      "target": [
+        "hummbl-transparency",
+        "risk-register",
+        "vendor-review"
+      ],
+      "max_papers": 10,
+      "recurrence": "quarterly",
+      "last_run": null,
+      "status": "pending",
+      "notes": "Feed vendor transparency and procurement-risk artifacts."
+    },
     {
       "id": "RQ-001",
       "domain": "prompt_engineering",
