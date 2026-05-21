@@ -24,3 +24,8 @@ MBP (human review + merge)      →  applied/
 - Reports: `reports/YYYY-MM-DD-domain-query-slug.md`
 - Findings: `findings/YYYY-MM-DD-domain.json`
 - Proposals: `proposals/YYYY-MM-DD-target-description.md`
+
+## Repository Health
+
+See [REPO_HEALTH.md](DOCS/REPO_HEALTH.md) for the authoritative repository
+health contract, validation command expectations, and branch-protection posture.
