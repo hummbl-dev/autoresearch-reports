@@ -2,6 +2,10 @@
 
 Shared depot for the Autoresearch → distillation → proposal pipeline.
 
+Learn more at [hummbl.io](https://hummbl.io).
+
+[![License](https://img.shields.io/github/license/hummbl-dev/autoresearch-reports)](https://github.com/hummbl-dev/autoresearch-reports/blob/main/LICENSE)
+
 ## Pipeline
 
 ```
