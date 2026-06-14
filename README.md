@@ -22,6 +22,7 @@ MBP (human review + merge)      →  applied/
 - `proposals/` — Draft improvement proposals (generated on nodezero)
 - `applied/` — Archive of accepted changes (moved after merge)
 - `research_queue.json` — Topic queue with recurrence schedules
+- `QUEUE_HEARTBEAT.md` — Generated queue freshness snapshot for overnight runs
 
 ## Automation Posture
 
@@ -41,3 +42,11 @@ decisions outside CI.
 - Reports: `reports/YYYY-MM-DD-domain-query-slug.md`
 - Findings: `findings/YYYY-MM-DD-domain.json`
 - Proposals: `proposals/YYYY-MM-DD-target-description.md`
+
+## Queue Heartbeat
+
+Refresh the queue heartbeat before starting or handing off an overnight batch:
+
+```bash
+python tools/update_queue_heartbeat.py
+```
