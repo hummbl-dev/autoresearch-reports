@@ -17,6 +17,8 @@ After surveying the 2025-2026 landscape of small language model training, six hi
 5. **Curate and mix data** -- 30% synthetic + 70% natural is the empirically optimal ratio; deduplicate aggressively
 6. **Over-train massively** -- MiniCPM finds 192:1 token-to-parameter ratio optimal, far beyond Chinchilla's 20:1
 
+> **Reconciliation note (2026-06-19):** These recommendations are evidence-based targets from the 2025 literature, not yet validated as the default recipe for the local RTX 3080 Ti fleet. A provisional canonical recipe and validation gates are in `founder-mode/docs/research/2026-06-19_slm-recipe-reconciliation.md` (relative to the founder-mode repo). Promote items here only after A/B validation on the 3080 Ti.
+
 ---
 
 ## 1. Training Techniques
